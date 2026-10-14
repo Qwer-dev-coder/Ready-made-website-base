@@ -1,0 +1,15 @@
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+functions/node_modules/
+functions/.env*
+functions/.secret.local
+data/*.db
+data/*.db-*
+**/__pycache__/
+*.pyc
+service-account*.json
+*-firebase-adminsdk-*.json
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Браузер не обращается к Firestore напрямую. Все операции проходят
+    // через серверный API, который проверяет сессию и роль пользователя.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
